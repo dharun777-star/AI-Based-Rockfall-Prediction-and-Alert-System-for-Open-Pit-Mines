@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RockGuard AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div>
+            <h1>🪨 RockGuard AI</h1>
+            <p>AI-Based Rockfall Prediction & Alert System</p>
+        </div>
+
+        <div class="status">
+            🟢 SYSTEM LIVE
+        </div>
+    </div>
+
+
+    <div class="dashboard">
+
+        <div class="card">
+            <div class="icon">🌧️</div>
+            <label>Rainfall</label>
+            <input id="rainfall" type="number" placeholder="mm">
+            <span>mm</span>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">📐</div>
+            <label>Slope Angle</label>
+            <input id="slope" type="number" placeholder="degrees">
+            <span>°</span>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🪨</div>
+            <label>Crack Width</label>
+            <input id="crack" type="number" placeholder="mm">
+            <span>mm</span>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">💧</div>
+            <label>Moisture</label>
+            <input id="moisture" type="number" placeholder="%">
+            <span>%</span>
+        </div>
+
+
+        <div class="card">
+            <div class="icon">🌡️</div>
+            <label>Temperature</label>
+            <input id="temperature" type="number" placeholder="°C">
+            <span>°C</span>
+        </div>
+          
+                  <div class="input-card">
+    <div class="input-icon">🪨</div>
+    <label for="rock_type">Rock Type</label>
+
+    <select id="rock_type" name="rock_type">
+        <option value="">Select Rock Type</option>
+        <option value="Granite">Granite</option>
+        <option value="Basalt">Basalt</option>
+        <option value="Limestone">Limestone</option>
+        <option value="Sandstone">Sandstone</option>
+        <option value="Shale">Shale</option>
+        <option value="Quartzite">Quartzite</option>
+    </select>
+</div>
+    </div>
+
+
+    <button onclick="predictRisk()">
+        🔍 PREDICT ROCKFALL RISK
+    </button>
+
+
+    <div id="result">
+
+        <h2>AI Risk Analysis</h2>
+
+        <p>Enter mine parameters and click predict.</p>
+
+    </div>
+
+
+    <div class="features">
+
+        <div>
+            🤖
+            <strong>AI Prediction</strong>
+            <small>Machine Learning Risk Analysis</small>
+        </div>
+
+        <div>
+            📊
+            <strong>Risk Score</strong>
+            <small>Real-time Confidence</small>
+        </div>
+
+        <div>
+            🚨
+            <strong>Early Alert</strong>
+            <small>Worker Safety Notification</small>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
